@@ -182,7 +182,7 @@ def main():
                 if SCALE != 1.0:
                     clone4 = cv2.resize(clone3, (int(W * SCALE), int(H * SCALE)))
                 else:
-                    clone4 = copy.copy(clone3)
+                    clone4 = clone3.copy()
 
             if state == 1 and leftdown_x != -1 and leftdown_y != -1:
                 x0 = leftdown_x
